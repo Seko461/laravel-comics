@@ -31,3 +31,17 @@ header {
     background-position-y: top;
     background-size: cover;
 }
+
+main {
+    background-color: rgb(28, 28, 28);
+    position: relative;
+
+    .current {
+        color: white;
+        background-color: blue;
+        padding: .5rem;
+        position: absolute;
+        top: - 2rem;
+        left: 13rem;
+    }
+}
