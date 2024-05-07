@@ -23,6 +23,30 @@
 
             @endforelse
         </div>
+        <div class="main-button text-center">
+            <button type="button" class="btn btn-primary rounded-0 text-uppercase px-3">Load More</button>
+
+        </div>
+        
     </div>
 </section>
+<div class="main-bottom">
+        <ul class="d-flex justify-content-center align-items-center list-unstyled">
+            <li>
+                <img width="50" src="{{Vite::asset('resources/assets/images/buy-comics-digital-comics.png')}}" alt="">
+            </li>
+            <li>
+                <img width="50" src="{{Vite::asset('resources/assets/images/buy-comics-merchandise.png')}}" alt="">
+            </li>
+            <li>
+                <img width="50" src="{{Vite::asset('resources/assets/images/buy-comics-shop-locator.png')}}" alt="">
+            </li>
+            <li>
+                <img width="50" src="{{Vite::asset('resources/assets/images/buy-comics-subscriptions.png')}}" alt="">
+            </li>
+            <li>
+                <img width="50" src="{{Vite::asset('resources/assets/images/buy-dc-power-visa.svg')}}" alt="">
+            </li>
+        </ul>
+    </div>
 @endsection
