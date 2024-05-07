@@ -1,10 +1,12 @@
 
 <header>
     <nav class="nav d-flex justify-content-center align-items-center py-2">
-        <img  src="{{ Vite::asset('resources/assets/images/dc-logo.png') }}" alt="">
-        <div class="links text-uppercase text-decoration-none gap-4">
+        <a href="/">
+            <img  src="{{ Vite::asset('resources/assets/images/dc-logo.png') }}" alt="">
+        </a>
+        <div class="links text-uppercase text-decoration-none gap-4" >
             <a class="text-decoration-none mx-2"href="#">CHARACTERS</a>
-            <a class="text-decoration-none mx-2"href="#">COMICS</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'comics' ? 'nav-active' :''}}"href="{{route('comics')}}">COMICS</a>
             <a class="text-decoration-none mx-2"href="#">MOVIES</a>
             <a class="text-decoration-none mx-2"href="#">TV</a>
             <a class="text-decoration-none mx-2"href="#">GAMES</a>
@@ -32,4 +34,7 @@
       </form>
 
     </nav>
+    <div class="jumbotron">
+        
+    </div>
 </header>

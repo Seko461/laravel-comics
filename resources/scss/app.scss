@@ -1,1 +1,33 @@
 @import '~bootstrap/scss/bootstrap';
+
+.nav-active {
+    color: blue;
+    border-bottom: solid 2px blue;
+}
+
+.nav-link {
+    color: black;
+    transform: translateX(-.5rem);
+}
+
+a:hover,
+.nav-link:hover {
+    color: blue;
+}
+
+header {
+    nav {
+        div>a {
+            color: black;
+            padding-bottom: 2.5rem;
+        }
+    }
+
+}
+
+.jumbotron {
+    height: 400px;
+    background-image: url(../assets/images/jumbotron.jpg);
+    background-position-y: top;
+    background-size: cover;
+}

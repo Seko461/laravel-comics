@@ -19,3 +19,9 @@ Route::get('/', function () {
     //dd('comics');
     return view('homepage', compact('comics'));
 })->name('homepage');
+
+Route::get('/comics', function () {
+
+    return view('/comics');
+})->name('comics');
+
