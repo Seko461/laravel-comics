@@ -51,7 +51,54 @@ main {
 
     .main-bottom {
         background-color: rgb(44, 128, 238);
+        padding: 1rem 0;
 
+        ul>li {
+            margin-right: 1rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+                margin-left: .5rem;
+            }
+
+            a:hover {
+                color: blue;
+                background-color: white;
+            }
+        }
+
+    }
+
+}
+
+footer {
+    height: 400px;
+    background-image: url('../assets/images/footer-bg.jpg');
+
+    .row {
+        display: flex;
+        flex-direction: row;
+
+        .left {
+            padding: 3rem 0;
+
+            ul>li {
+                color: white;
+                line-height: .5rem;
+
+            }
+
+            .li-item {
+                color: gray;
+            }
+        }
+
+        .right {
+            img {
+                height: 200px;
+            }
+        }
     }
 
 }
