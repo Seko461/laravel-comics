@@ -52,6 +52,7 @@ main {
     .main-bottom {
         background-color: rgb(44, 128, 238);
         padding: 1rem 0;
+        z-index: 100;
 
         ul>li {
             margin-right: 1rem;
@@ -92,13 +93,16 @@ footer {
             .li-item {
                 color: gray;
             }
-        }
 
-        .right {
             img {
-                height: 200px;
+                height: 500px;
+                transform: translateY(-8rem);
+                z-index: 1;
+                margin-left: 16rem;
             }
         }
+
+
     }
 
 }

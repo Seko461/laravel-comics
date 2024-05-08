@@ -43,9 +43,9 @@
                         <li class="li-item"><p>lorem</p></li>
                         <li class="li-item"><p>lorem</p></li>
                     </div>
+                    <img src="{{ Vite::asset('resources/assets/images/dc-logo-bg.png')}}" alt="">
                 </div>
                 <div class="right">
-                    <img src="{{ Vite::asset('resources/assets/images/dc-logo-bg.png')}}" alt="">
 
                 </div>
 
