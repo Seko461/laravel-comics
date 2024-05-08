@@ -5,15 +5,15 @@
             <img  src="{{ Vite::asset('resources/assets/images/dc-logo.png') }}" alt="">
         </a>
         <div class="links text-uppercase text-decoration-none gap-4" >
-            <a class="text-decoration-none mx-2"href="#">CHARACTERS</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'characters' ? 'nav-active' :''}}"href="{{route('characters')}}">CHARACTERS</a>
             <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'comics' ? 'nav-active' :''}}"href="{{route('comics')}}">COMICS</a>
-            <a class="text-decoration-none mx-2"href="#">MOVIES</a>
-            <a class="text-decoration-none mx-2"href="#">TV</a>
-            <a class="text-decoration-none mx-2"href="#">GAMES</a>
-            <a class="text-decoration-none mx-2"href="#">COLLECTIBLES</a>
-            <a class="text-decoration-none mx-2"href="#">VIDEOS</a>
-            <a class="text-decoration-none mx-2"href="#">FANS</a>
-            <a class="text-decoration-none mx-2"href="#">NEWS</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'movies' ? 'nav-active' :''}}"href="{{route('movies')}}">MOVIES</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'tv' ? 'nav-active' :''}}"href="{{route('tv')}}">TV</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'games' ? 'nav-active' :''}}"href="{{route('games')}}">GAMES</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'collectibles' ? 'nav-active' :''}}"href="{{route('collectibles')}}">COLLECTIBLES</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'videos' ? 'nav-active' :''}}"href="{{route('videos')}}">VIDEOS</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'fans' ? 'nav-active' :''}}"href="{{route('fans')}}">FANS</a>
+            <a class="text-decoration-none mx-2 {{Route::currentRouteName() === 'news' ? 'nav-active' :''}}"href="{{route('news')}}">NEWS</a>
             
         </div>
         <div class="nav-item dropdown text-uppercase">
