@@ -18,7 +18,7 @@
             </div>
             @empty
             <div class="col-12">
-                <p>Nothing to show here, sorry 😢</p>
+                <p>Image not found, sorry</p>
             </div>
 
             @endforelse
