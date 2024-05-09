@@ -23,6 +23,10 @@ header {
         }
     }
 
+
+
+
+
 }
 
 .jumbotron {
@@ -35,6 +39,80 @@ header {
 main {
     background-color: rgb(28, 28, 28);
     position: relative;
+
+    .comic-show-top-cover>img {
+        position: absolute;
+        top: -14rem;
+        left: 20rem;
+
+        height: 300px;
+        z-index: 20;
+
+    }
+
+    .bottom-jumbo-banner {
+        height: 100px;
+        width: 100%;
+        background-color: blue;
+        transform: translateY(-2rem);
+    }
+
+    .body-info {
+        background-color: white;
+        transform: translateY(-3rem);
+        height: 700px;
+        width: 100vw;
+    }
+
+    .availability {
+        background-color: rgb(0, 151, 0);
+        line-height: 3rem;
+        color: greenyellow;
+        border: 1px solid black;
+
+        .left {
+            //border: 1px solid black;
+            line-height: 20px;
+            flex-direction: row;
+            padding-left: 2rem;
+            padding-right: 3rem;
+            margin-right: 1rem;
+
+        }
+
+
+
+    }
+
+
+    .availability>.right {
+        padding: 0 2rem;
+        border-left: 1px solid black;
+
+
+
+        a {
+            color: white;
+        }
+
+
+    }
+
+    .dropdown-menu>.dropdown-item {
+        color: black;
+    }
+
+    .availaible-info {
+        text-align: end;
+        // border: 1px solid black;
+
+    }
+
+    .green-banner-text {
+        // border: 1px solid black;
+        // justify-content: space-between;
+        flex-grow: 1;
+    }
 
     .current {
         color: white;
@@ -70,6 +148,9 @@ main {
         }
 
     }
+
+
+
 
 }
 

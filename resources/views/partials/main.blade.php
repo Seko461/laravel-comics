@@ -1,6 +1,3 @@
-
-
 <main>
-     @yield('content')
+    @yield('content')
 </main>
-

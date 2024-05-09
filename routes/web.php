@@ -15,53 +15,85 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $comics = config('db.comics');
-    //dd('comics');
-    return view('homepage', compact('comics'));
+    return view('homepage');
 })->name('homepage');
 
-Route::get('/characters', function () {
+// HomePage
 
-    return view('/characters');
-})->name('characters');
 
-Route::get('/comics', function () {
+Route::get('guests.characters', function () {
 
-    return view('/comics');
-})->name('comics');
+    return view('guests.characters');
+})->name('guests.characters');
 
-Route::get('/movies', function () {
+// -- End Characters --
 
-    return view('/movies');
-})->name('movies');
+Route::get('guests.comics_index', function () {
+    $comics = config('db.comics');
+    //dd('comics');
+    
+    return view('guests.comics_index', ['comics' => $comics]);
+})->name('guests.comics_index');
+Route::get('guests.show.comics/{id}', function ($id) {
 
-Route::get('/tv', function () {
+    
+    abort_unless($id >= 0 && $id < count(config('db.comics')), 404);
 
-    return view('/tv');
-})->name('tv');
+    $comic = config('db.comics')[$id];
+    //dd($comic);
+    
 
-Route::get('/games', function () {
+    return view('guests.show.comics',compact('comic') );
+})->name('guests.show.comics');
 
-    return view('/games');
-})->name('games');
+// -- End Comics --
 
-Route::get('/collectibles', function () {
+Route::get('guests.movies', function () {
 
-    return view('/collectibles');
-})->name('collectibles');
+    return view('guests.movies');
+})->name('guests.movies');
 
-Route::get('/videos', function () {
+// -- End Movies --
 
-    return view('/videos');
-})->name('videos');
+Route::get('guests.tv', function () {
 
-Route::get('/fans', function () {
+    return view('guests.tv');
+})->name('guests.tv');
 
-    return view('/fans');
-})->name('fans');
+// -- End Tv --
 
-Route::get('/news', function () {
+Route::get('guests.games', function () {
 
-    return view('/news');
-})->name('news');
+    return view('guests.games');
+})->name('guests.games');
+
+// -- End Games --
+
+Route::get('guests.collectibles', function () {
+
+    return view('guests.collectibles');
+})->name('guests.collectibles');
+
+// -- End Collectibles --
+
+Route::get('guests.videos', function () {
+
+    return view('guests.videos');
+})->name('guests.videos');
+
+// -- End Videos --
+
+Route::get('guests.fans', function () {
+
+    return view('guests.fans');
+})->name('guests.fans');
+
+// -- End Fans --
+
+Route::get('guests.news', function () {
+
+    return view('guests.news');
+})->name('guests.news');
+
+// -- End News --
 
